@@ -1,0 +1,37 @@
+# Changelog
+
+All notable changes to the `indian-property-drafting` plugin are documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
+
+---
+
+## [0.1.0-alpha] — 2026-05-16 (initial release)
+
+### Added
+
+- **Plugin scaffolding** — `.claude-plugin/plugin.json` manifest · MIT `LICENSE` · `NOTICE.md` provenance and privilege statement · `.gitignore` · this `CHANGELOG.md` · comprehensive `README.md`.
+- **Six-agent drafting pipeline** — Reader → Format → Drafter → Verifier → Refiner → Overseer. Each agent is a markdown file under `agents/<name>/<name>.md` with YAML frontmatter declaring `name`, `description`, and `allowed-tools`.
+- **Shared infrastructure skills:**
+  - `_drafting_common` — anti-pollution rules, encoding standards, language conventions, AI-style-marker blacklist, property-specific privacy firewall (party names, property descriptions, consideration figures, Ready Reckoner values), Indian Stamp Act 1899 + applicable State Stamp Act schedule discipline (Article-wise tabular reference), Registration Act 1908 compulsory-registration discipline read with Section 17(1)(a)-(d) and Section 17(1A) read with Section 53A TPA 1882, the *Suraj Lamp & Industries v. State of Haryana* (2012) 1 SCC 656 discipline (GPA-Sale / Agreement-to-Sell-with-Possession-and-GPA does NOT convey title), the Sub-Registrar circle discipline, the Ready Reckoner / Market Value rates for stamp-duty discipline, the Section 32A Registration Act enquiry-into-stamp-duty discipline, the Section 27 Indian Stamp Act 1899 facts-affecting-stamp-duty discipline, mutation discipline (Section 35 Land Records / state-specific), personal-law overlays (Hindu Succession Act 1956 coparcener overlay, Indian Succession Act 1925 testamentary overlay, Mussalman Personal Law (Shariat) Application Act 1937 overlay for Muslim heirs, Hindu Joint Family discipline for partition).
+  - `_property_drafting_base` — universal Indian property-instrument skeleton (Title -> Parties block with PAN / Aadhaar references / family-tree where relevant -> Recitals with title-chain narrative -> Operative clauses -> Schedule of Property with municipal / survey / Ready Reckoner reference -> Encumbrance / Title warranties -> Stamping note -> Registration note -> Witnesses -> Signatures).
+- **Ten case-type skill scaffolds:**
+  - `gift-deed-draft` — Gift Deed under Sections 122-129 of the Transfer of Property Act 1882 + Section 17(1)(a) Registration Act 1908 (compulsorily registrable) + State Stamp Act concessional rates for family-member gifts
+  - `exchange-deed-draft` — Exchange Deed under Sections 118-121 TPA 1882 + Section 17(1)(b) Registration Act 1908 + dual-stamp discipline (each leg of the exchange separately stamped)
+  - `release-deed-draft` — Release Deed for relinquishment of rights / share in immovable property; common between coparceners post-partition or between joint-tenants
+  - `private-trust-deed-draft` — Private Trust Deed under the Indian Trusts Act 1882 (Sections 3-9, 14-30) — settlor / trustees / beneficiaries / trust property / trust purposes / trustee powers and duties / beneficiary rights / accounts and audit / variation and termination
+  - `wakf-deed-draft` — Wakf Deed (Wakf-bil-Mall / Wakf-bil-Wasiyat / Wakf-alal-Aulad) under the Wakf Act 1995 read with the Mussalman Wakf Validating Act 1913; State Wakf Board registration discipline
+  - `easement-deed-draft` — Easement Deed under the Indian Easements Act 1882 — easement of right of way / easement of light and air / easement of support / easement of water / quasi-easement upon severance of unity of ownership
+  - `partition-deed-draft` — private Partition Deed between coparceners / co-owners of joint-family / joint-tenancy property under TPA / Hindu Succession Act 1956 read with Hindu Mitakshara / Dayabhaga schools or Muslim succession discipline; Section 7 Indian Stamp Act 1899 partition discipline
+  - `settlement-deed-draft` — Family Settlement Deed — *Kale v. Deputy Director of Consolidation* (1976) 3 SCC 119 framework — antecedent title not required to be proved; mutual relinquishment with public-document recognition; Section 17 Registration Act 1908 framework + State Stamp Act concessional rates
+  - `mortgage-deed-draft` — Registered Mortgage Deed under Section 59 read with Section 58 TPA 1882; six TPA mortgage types covered (simple mortgage / mortgage by conditional sale / usufructuary mortgage / English mortgage / equitable mortgage by deposit of title deeds / anomalous mortgage); Section 67 right of foreclosure / sale / suit framework
+  - `title-investigation-report-draft` — Title Investigation Report / Title Search Memorandum — title chain back to 30 years (where the title has been with the same family) or to mother deed; encumbrance certificate analysis from the Sub-Registrar's office; mutation entries; revenue records cross-check; pending litigation / charge / lis pendens; marketable title opinion with risk-flag listing
+- **State-aware design** — `state-config/exemplars/` provides State-specific Stamp Act schedule references, Ready Reckoner / Market Value framework, Sub-Registrar circle conventions, applicable State land-records / mutation framework, family-member concessional stamp duty rules, and applicable State Wakf Board / Charity Commissioner reference per State.
+
+### Notes on this release
+
+This is a **v0.1.0-alpha scaffold release**. The structural skeletons, agent pipeline, base skills, and 10 case-type skill frames are in place. Deep per-skill encoding (full clause libraries for each instrument type, State-specific stamp-duty calculations integrated with current Ready Reckoner values, deeper personal-law overlays for Muslim / Christian / Parsi succession matters, integration with State-specific land-records and mutation portals, and bench-specific Practice Directions for the Sub-Registrar circles in major cities) will land in v0.1.0 and onward.
+
+### Released under
+
+MIT License. Authored by Rushikesh R. Mahajan, Advocate, publishing under the Wolfgang Rush open-source brand for legal-tech infrastructure.
