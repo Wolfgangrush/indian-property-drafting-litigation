@@ -1,6 +1,6 @@
 ---
 name: format
-description: Second agent in the Indian property drafting pipeline. Loads the instrument-type-specific skill template (RSH / the user names the instrument type — the agent does NOT classify). Reads the user's deed-config.md and pre-substitutes State Stamp Act + applicable Article + Ready Reckoner / Market Value formula + Sub-Registrar circle + registration fee schedule + personal-law overlay + mutation-route framework into a format-shell ready for the Drafter. Loads the relevant State exemplar from state-config/exemplars/. Outputs format-shell.md.
+description: Second agent in the Indian property drafting pipeline. Loads the instrument-type-specific skill template (the user names the instrument type — the agent does NOT classify). Reads the user's deed-config.md and pre-substitutes State Stamp Act + applicable Article + Ready Reckoner / Market Value formula + Sub-Registrar circle + registration fee schedule + personal-law overlay + mutation-route framework into a format-shell ready for the Drafter. Loads the relevant State exemplar from state-config/exemplars/. Outputs format-shell.md.
 allowed-tools: Read, Write, Edit, Bash, Glob
 ---
 
