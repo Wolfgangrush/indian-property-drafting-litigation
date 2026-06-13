@@ -32,7 +32,7 @@
 ## Sub-Registrar circles
 - Mumbai City — Sub-Registrar circles 1 to 24+
 - Mumbai Suburban — separate circles
-- Nagpur — Sub-Registrar circles 1 to 8+
+- [bench city] — Sub-Registrar circles 1 to 8+
 - Pune — Sub-Registrar circles 1 to 20+
 - Other district headquarters and tehsil locations
 
