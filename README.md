@@ -1,3 +1,17 @@
+<div align="center">
+  <img src="docs/banner.png" width="820"/>
+  <p><strong>Indian property, conveyancing, and estate instruments — drafted in Claude.</strong></p>
+  <p>Visit the live site: <a href="https://wolfgangrush.github.io">wolfgangrush.github.io</a></p>
+</div>
+
+<div align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Claude-compatible-8A2BE2.svg" alt="Claude compatible"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Indian_Property-1B8C2.svg" alt="Indian Property"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Made_in_India-FF9933.svg" alt="Made in India"/></a>
+</div>
+
+
 # indian-property-drafting
 
 > **Open-source Claude-compatible plugin for drafting Indian property, conveyancing, and estate instruments — the conveyancing-and-family-property side that complements `indian-contracts-drafting`'s commercial-contracts focus.**
